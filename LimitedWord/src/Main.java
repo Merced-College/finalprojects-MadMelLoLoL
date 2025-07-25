@@ -40,8 +40,8 @@ public class Main {
 
             //game results
             if (playerInput.isEmpty()) {
-                System.out.println("❌ You didn't type anything! :( Try again. " + totalScore);
-                break;
+                System.out.println("❌ You didn't type anything! :( Try again. " + "You have " + lives + " lives left.");
+            
             } else if (WordsLetterGen.isValidWord(playerInput, targetCombo, validWords)) {
                 totalScore += score;
                 System.out.println("✅ Correct!");
